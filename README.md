@@ -1,4 +1,4 @@
-# Personal-Portfolio-Sass
+# Personal Portfolio | Sass
 Perosnal portfolio Project using HTML, Sass &amp; JS.
 ## Deployment
 Deployed in GitHub Pages.
