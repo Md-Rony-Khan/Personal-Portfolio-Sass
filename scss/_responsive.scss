@@ -1,0 +1,131 @@
+@include media-md {
+  .menu-btn {
+    visibility: hidden;
+  }
+  .nav {
+    visibility: visible;
+
+    .menu-nav {
+      display: block;
+      transform: translateY(0);
+      height: 100%;
+      background: $primary-color;
+      text-align: right;
+
+      &__item {
+        display: initial;
+        padding-right: 1.5rem;
+      }
+
+      &__link {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .home {
+    padding-top: 40vh;
+    &__name {
+      font-size: 5rem;
+    }
+    .social-icons {
+      position: absolute;
+    }
+  }
+  .about__bio-image {
+    height: 70vh;
+    p {
+      font-size: 1rem;
+    }
+  }
+  .about__bio {
+    font-size: 1.5rem;
+  }
+
+  .projects {
+    &__bio-image {
+      height: 40vh;
+    }
+    &__items {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .text-secondary {
+      font-size: 1.5rem;
+    }
+  }
+  .skills-courses,
+  .projects {
+    .topic {
+      font-size: 3rem;
+    }
+  }
+  .skills-courses {
+    &__bio-image {
+      height: 40vh;
+    }
+  }
+  .contact {
+    padding-top: 40vh;
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@include media-lg {
+  .about__bio-image {
+    height: 60vh;
+    p {
+      font-size: 1.2rem;
+    }
+  }
+  .projects {
+    &__items {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .contact {
+    padding-top: 40vh;
+    h2 {
+      font-size: 3rem;
+      margin-bottom: 3rem;
+      text-transform: uppercase;
+    }
+    &__list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  .skills-courses {
+    &__bio-image {
+      height: 40vh;
+    }
+  }
+
+  .skills-courses,
+  .projects {
+    .topic {
+      font-size: 3rem;
+    }
+  }
+}
+
+@include media-xl {
+  .about__bio-image {
+    height: 40vh;
+    p {
+      font-size: 2rem;
+    }
+  }
+
+  .projects__bio-image,
+  .skills-courses__bio-image {
+    height: 50vh;
+  }
+
+  .skills-courses,
+  .projects {
+    .topic {
+      font-size: 3rem;
+    }
+  }
+}
